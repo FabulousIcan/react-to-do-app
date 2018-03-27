@@ -7,16 +7,22 @@ An app built with React - an open source JavaScript library used for designing u
 You can find the React documentation on the [website](https://reactjs.org/).
 
 
-### Install Dependencies
-
-```
-npm install -g create-react-app
-```
-
-### Clone the repository
+### Clone the repository and change directory
 
 ```
 cd react-to-do-app
+```
+
+### Install Node 6.x
+```
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+
+sudo apt-get install nodejs
+```
+
+### Install Dependencies
+```
+npm install -g create-react-app
 ```
 
 ### Run the Application
