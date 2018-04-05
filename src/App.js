@@ -3,20 +3,20 @@ import logo from './logo.svg';
 import './App.css';
 import Note from './components/Note';
 
-
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       noteText: '',
       notes: [],
+      notesCount: 0,
     }
   }
 
   addNote() {
     let notesArr = this.state.notes;
     notesArr.push(this.state.noteText);
-    this.setState({ noteText: '' });
+    this.setState({ noteText: '', notesCount: this.state.notes.length });
     this.textInput.focus();
   }
 
@@ -37,7 +37,7 @@ class App extends Component {
       */
       let notesArr = this.state.notes;
       notesArr.push(this.state.noteText);
-      this.setState({ noteText: '' });
+      this.setState({ noteText: '', notesCount: this.state.notes.length });
     }
   }
 
@@ -57,6 +57,7 @@ class App extends Component {
         <div className="header">
           <img src={logo} className="App-logo" alt="logo" />
           Task Manager
+          <span className="header__note--count">Count : {this.state.notesCount}</span>
         </div>
 
         {notes}

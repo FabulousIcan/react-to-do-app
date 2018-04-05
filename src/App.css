@@ -31,6 +31,9 @@ body{
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+.header__note--count{
+  margin-left: auto;
+}
 .note{
   color: #adadad;
   padding: 40px;
