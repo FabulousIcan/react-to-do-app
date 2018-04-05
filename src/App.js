@@ -27,7 +27,7 @@ class App extends Component {
   deleteNote(index) {
     let notesArr = this.state.notes;
     notesArr.splice(index, 1);
-    this.setState({ notes: notesArr });
+    this.setState({ notes: notesArr, notesCount: this.state.notes.length });
   }
 
   handleKeyPress = (event) => {
