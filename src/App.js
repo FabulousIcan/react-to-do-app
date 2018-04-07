@@ -9,8 +9,14 @@ class App extends Component {
     this.state = {
       noteText: '',
       notes: [],
-      notesCount: 0,
+      notesCount : null,
     }
+  }
+  
+  componentDidMount(){
+    this.setState({
+      notesCount : 0,
+    })
   }
 
   addNote() {
