@@ -16,13 +16,9 @@ sudo apt-get install nodejs
 
 ### Install Dependencies
 ```
-npm install -g create-react-app
+npm install
 ```
 
-### Create new app and grab the node-modules from it to the app directory
-```
-create-react-app my-app
-```
 
 ### Change directory
 
